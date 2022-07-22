@@ -1,0 +1,27 @@
+name: Update subito-doc
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Pushes json file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'etc/subito-connector-rabbitmq.api.json'
+        destination_repo: 'Xavius1/subito-doc'
+        destination_branch: 'main'
+        destination_folder: 'src'
+        user_email: 'xavius@tutanota.com'
+        user_name: 'Xavius1'
+        commit_message: 'Update subito-connector-rabbitmq doc'
