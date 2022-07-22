@@ -1,0 +1,1110 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.28.6",
+    "schemaVersion": 1009,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      },
+      "reportUnsupportedHtmlElements": false
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "subito-connector-rabbitmq!",
+  "docComment": "/**\n * Handle RabbitMQ connections into Subito micro services\n *\n * @packageDocumentation\n */\n",
+  "name": "subito-connector-rabbitmq",
+  "preserveMemberOrder": false,
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "subito-connector-rabbitmq!",
+      "name": "",
+      "preserveMemberOrder": false,
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "subito-connector-rabbitmq!Channel:class",
+          "docComment": "/**\n * Create a new RabbitMQ channel\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class Channel implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IChannel",
+              "canonicalReference": "subito-connector-rabbitmq!IChannel:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Channel",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "subito-connector-rabbitmq!Channel:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Channel` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(broker: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Connection",
+                  "canonicalReference": "@types/amqplib!Connection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "broker",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#bind:member(1)",
+              "docComment": "/**\n * Bind a queue to the channel\n *\n * @param queue - Queue to bind\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bind(queue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "queue",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "bind"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#broker:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected broker: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Connection",
+                  "canonicalReference": "@types/amqplib!Connection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "broker",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": true
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#channel:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected channel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TChannel",
+                  "canonicalReference": "@types/amqplib!Channel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "channel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false,
+              "isProtected": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#consume:member(1)",
+              "docComment": "/**\n * Start to consume the queue\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "consume(service: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<true>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "service",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "consume"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#isBinded:member(1)",
+              "docComment": "/**\n * Check if the channel is binded to a queue\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isBinded(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "name": "isBinded"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#publish:member(1)",
+              "docComment": "/**\n * Publish a new message\n *\n * @param msg - Message to publish\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "publish(msg: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "msg",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "publish"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Channel#queue:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected queue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "queue",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": true
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 2
+            }
+          ]
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "subito-connector-rabbitmq!Connector:class",
+          "docComment": "/**\n * Create a new RabbitMQ connection\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class Connector "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Connector",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "subito-connector-rabbitmq!Connector:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Connector` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(credentials: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Credentials",
+                  "canonicalReference": "subito-connector-rabbitmq!Credentials:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "credentials",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Connector#broker:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected broker: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Connection",
+                  "canonicalReference": "@types/amqplib!Connection:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "broker",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "isStatic": false,
+              "isProtected": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Connector#channel:member(1)",
+              "docComment": "/**\n * Get a channel\n *\n * @param queue - Queue to bind to the channel\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "channel(queue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "subito-connector-rabbitmq!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "queue",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "channel"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Connector#connect:member(1)",
+              "docComment": "/**\n * Connect to the RabbitMQ host\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "connect(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [],
+              "isOptional": false,
+              "name": "connect"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Connector#credentials:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected credentials: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Credentials",
+                  "canonicalReference": "subito-connector-rabbitmq!Credentials:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "credentials",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": true
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "subito-connector-rabbitmq!Credentials:type",
+          "docComment": "/**\n * RabbitMQ credentials\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type Credentials = "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    hosname: string;\n    username: string;\n    password: string;\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Credentials",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "subito-connector-rabbitmq!IChannel:interface",
+          "docComment": "/**\n * Channel interface\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IChannel "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IChannel",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "subito-connector-rabbitmq!IChannel#bind:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "bind(queue: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<this>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "queue",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "bind"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "subito-connector-rabbitmq!IChannel#consume:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "consume(service: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<true>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "service",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "consume"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "subito-connector-rabbitmq!IChannel#publish:member(1)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "publish(msg: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "msg",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "name": "publish"
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "subito-connector-rabbitmq!Repository:class",
+          "docComment": "/**\n * Create a new RabbitMQ repository\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare class Repository "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "Repository",
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "subito-connector-rabbitmq!Repository:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `Repository` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(channel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "subito-connector-rabbitmq!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "channel",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "subito-connector-rabbitmq!Repository#channel:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "protected channel: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IChannel",
+                  "canonicalReference": "subito-connector-rabbitmq!IChannel:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "channel",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isStatic": false,
+              "isProtected": true
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Repository#consume:member(1)",
+              "docComment": "/**\n * Start to consume the queue\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "consume(service: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function",
+                  "canonicalReference": "!Function:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<true>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "service",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "consume"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "subito-connector-rabbitmq!Repository#publish:member(1)",
+              "docComment": "/**\n * Publish a new message\n *\n * @param msg - Message to publish\n *\n * @returns \n *\n * @public\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "publish(msg: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "unknown"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean | undefined>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 5
+              },
+              "releaseTag": "Public",
+              "isProtected": false,
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "msg",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "isOptional": false
+                }
+              ],
+              "isOptional": false,
+              "name": "publish"
+            }
+          ],
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}
