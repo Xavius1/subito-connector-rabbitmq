@@ -6,7 +6,7 @@
   "type": "module",
   "typings": "./dist/subito-connector-rabbitmq.d.ts",
   "scripts": {
-    "np": "npm run pre-publish && np",
+    "np": "npm run pre-publish && np --no-tests",
     "pre-publish": "npm run compile-js && npm run build-types && npm run build-dist",
     "build-dist": "./node_modules/.bin/tsc -p tsconfig.dist.json",
     "build-doc": "./node_modules/.bin/subito-build-doc",
