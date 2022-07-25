@@ -49,8 +49,8 @@ class Channel implements IChannel {
    * @public
    */
   async consume(service: Function): Promise<true> {
-    const { isBinded, channel, queue } = this;
-    isBinded();
+    const { channel, queue } = this;
+    this.isBinded();
 
     channel?.consume(queue, async (msg) => {
       if (msg !== null) {
