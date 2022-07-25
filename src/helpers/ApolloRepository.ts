@@ -21,8 +21,11 @@ class Repository extends Base {
    *
    * @public
    */
-  async publish(msg: unknown) {
-    return this.channel.publish(msg);
+  async publish(msg: { [key: string]: any}) {
+    return this.channel.publish({
+      ...msg,
+      context: this.context
+    });
   }
 
   /**
