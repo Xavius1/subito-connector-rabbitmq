@@ -51,7 +51,8 @@ class Channel implements IChannel {
   async consume(service: Function): Promise<true> {
     const { channel, queue } = this;
     this.isBinded();
-
+    
+    console.log(`Ready to consume ${this.queue}`); // eslint-disable-line no-console
     channel?.consume(queue, async (msg) => {
       if (msg !== null) {
         try {

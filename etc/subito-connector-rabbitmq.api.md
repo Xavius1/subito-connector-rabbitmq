@@ -7,6 +7,16 @@
 import type { Channel as Channel_2 } from 'amqplib';
 import type { Connection } from 'amqplib';
 import { Repository as Repository_2 } from 'subito-lib';
+import { Repository as Repository_3 } from 'subito-graphql';
+
+// @public
+export class ApolloRepository extends Repository_3 {
+    constructor(channel: IChannel);
+    // (undocumented)
+    protected channel: IChannel;
+    consume(service: Function): Promise<true>;
+    publish(msg: unknown): Promise<boolean | undefined>;
+}
 
 // @public
 export class Channel implements IChannel {
