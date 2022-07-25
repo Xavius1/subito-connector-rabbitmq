@@ -22,9 +22,13 @@ class Repository extends Base {
    * @public
    */
   async publish(msg: { [key: string]: any}) {
+    const cleanContext = { ...this.context };
+    delete cleanContext.dataSources;
+    delete cleanContext.services;
+
     return this.channel.publish({
       ...msg,
-      context: this.context
+      context: cleanContext
     });
   }
 
