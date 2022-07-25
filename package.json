@@ -1,6 +1,6 @@
 {
   "name": "subito-connector-rabbitmq",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Rabbitmq connector for subito micro services",
   "main": "./dist/index.js",
   "type": "module",
