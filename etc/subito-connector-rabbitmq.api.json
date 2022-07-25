@@ -322,7 +322,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "unknown"
+                  "text": "{\n        [key: string]: any;\n    }"
                 },
                 {
                   "kind": "Content",
@@ -1267,7 +1267,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "unknown"
+                  "text": "{\n        [key: string]: any;\n    }"
                 },
                 {
                   "kind": "Content",

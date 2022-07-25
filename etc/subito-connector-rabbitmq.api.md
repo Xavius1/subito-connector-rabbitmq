@@ -15,7 +15,9 @@ export class ApolloRepository extends Repository_3 {
     // (undocumented)
     protected channel: IChannel;
     consume(service: Function): Promise<true>;
-    publish(msg: unknown): Promise<boolean | undefined>;
+    publish(msg: {
+        [key: string]: any;
+    }): Promise<boolean | undefined>;
 }
 
 // @public
@@ -67,7 +69,9 @@ export class Repository extends Repository_2 {
     // (undocumented)
     protected channel: IChannel;
     consume(service: Function): Promise<true>;
-    publish(msg: unknown): Promise<boolean | undefined>;
+    publish(msg: {
+        [key: string]: any;
+    }): Promise<boolean | undefined>;
 }
 
 ```
