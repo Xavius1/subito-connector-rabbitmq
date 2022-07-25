@@ -737,7 +737,7 @@
             },
             {
               "kind": "Content",
-              "text": "{\n    hosname: string;\n    username: string;\n    password: string;\n}"
+              "text": "{\n    hostname: string;\n    username: string;\n    password: string;\n}"
             },
             {
               "kind": "Content",
@@ -926,7 +926,16 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare class Repository "
+              "text": "declare class Repository extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Base",
+              "canonicalReference": "subito-lib!Repository:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
             }
           ],
           "releaseTag": "Public",
@@ -1102,6 +1111,10 @@
               "name": "publish"
             }
           ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          },
           "implementsTokenRanges": []
         }
       ]

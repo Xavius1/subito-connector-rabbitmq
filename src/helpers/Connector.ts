@@ -8,7 +8,7 @@ import type { IChannel } from './Channel.js';
  * @public
  */
 export type Credentials = {
-  hosname: string
+  hostname: string
   username: string
   password: string
 }

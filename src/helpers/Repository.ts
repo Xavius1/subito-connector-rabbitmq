@@ -1,13 +1,15 @@
+import { Repository as Base } from 'subito-lib';
 import type { IChannel } from './Channel.js';
 
 /**
  * Create a new RabbitMQ repository
  * @public
  */
-class Repository {
+class Repository extends Base {
   protected channel: IChannel;
 
   constructor(channel: IChannel) {
+    super();
     this.channel = channel;
   }
 

@@ -6,6 +6,7 @@
 
 import type { Channel as Channel_2 } from 'amqplib';
 import type { Connection } from 'amqplib';
+import { Repository as Repository_2 } from 'subito-lib';
 
 // @public
 export class Channel implements IChannel {
@@ -35,7 +36,7 @@ export class Connector {
 
 // @public
 export type Credentials = {
-    hosname: string;
+    hostname: string;
     username: string;
     password: string;
 };
@@ -51,7 +52,7 @@ export interface IChannel {
 }
 
 // @public
-export class Repository {
+export class Repository extends Repository_2 {
     constructor(channel: IChannel);
     // (undocumented)
     protected channel: IChannel;
