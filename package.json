@@ -55,7 +55,7 @@
     "webpack-cli": "4.10.0"
   },
   "dependencies": {
-    "amqplib": "0.10.0",
+    "amqplib": "0.10.2",
     "subito-graphql": "0.12.0",
     "subito-lib": "0.13.0"
   }
