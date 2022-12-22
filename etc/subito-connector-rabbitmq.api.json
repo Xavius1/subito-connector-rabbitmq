@@ -931,7 +931,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare type Credentials = "
+              "text": "export type Credentials = "
             },
             {
               "kind": "Content",
