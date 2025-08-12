@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "amqplib": "0.10.3",
-    "subito-graphql": "0.23.2",
+    "subito-graphql": "0.26.0",
     "subito-lib": "0.18.7"
   }
 }
